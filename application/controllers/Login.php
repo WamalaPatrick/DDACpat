@@ -12,10 +12,10 @@ class Login extends CI_Controller {
 
 	public function validate_credentials()
 	{
-		/*$this->load->model('membership_model');
+		$this->load->model('membership_model');
 		$query = $this->membership_model->validate();*/
 
-		/*if($query) //if credentials are validated
+		if($query) //if credentials are validated
 		{
 			$data = array
 			(
@@ -24,12 +24,13 @@ class Login extends CI_Controller {
 			);
 
 			$this->session->set_userdata($data);
+			$this->session->set_username($this->input->post('username'));
 			redirect('home');
 		}
 		else //incorrect creds
 		{
 			$this->index();
-		}*/
+		}
 		
 			$this->load->view('template/header');
 			$this->load->view('template/secondHeader');

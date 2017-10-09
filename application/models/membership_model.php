@@ -44,7 +44,7 @@ class Membership_model extends CI_Model
 			'Children' => $this->input->post('children'),
 			'UserEmail' => $this->input->post('email')
 		);
-
+9
 		$insert = $this->db->insert('flights', $new_booking_insert);
 		return $insert;
 
@@ -52,6 +52,7 @@ class Membership_model extends CI_Model
 
 	function fetch_data()
 	{
+		$this->db->where('Username', $this->session->username));
 		$query = $this->db->get('users');
 		return $query;
 	}
