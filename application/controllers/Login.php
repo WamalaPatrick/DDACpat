@@ -24,7 +24,6 @@ class Login extends CI_Controller {
 			);
 
 			$this->session->set_userdata($data);
-			$this->session->set_username($this->input->post('username'));
 			redirect('home');
 		}
 		else //incorrect creds
