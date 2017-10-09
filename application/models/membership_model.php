@@ -52,7 +52,7 @@ class Membership_model extends CI_Model
 
 	function fetch_data()
 	{
-		$this->db->where('Username', $this->session->username));
+		$this->db->where('Email', $this->session->UserEmail));
 		$query = $this->db->get('users');
 		return $query;
 	}
