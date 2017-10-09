@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'ukraineddac.database.windows.net',
-	'username' => 'Dragon',
-	'password' => 'Namikaze1994',
-	'database' => 'DDAC',
+	'hostname' => 'uiaserver.database.windows.net',
+	'username' => 'Myname',
+	'password' => 'Deepwaters1994',
+	'database' => 'UAI',
 	'dbdriver' => 'sqlsrv',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
